@@ -39,7 +39,9 @@ function pages() {
 }
 
 function images() {
-  return gulp.src("src/img/*.*").pipe(gulp.dest("build/img"));
+  return gulp
+    .src("src/img/*.*")
+    .pipe(gulp.dest("build/img"));
 }
 
 function build(done) {
