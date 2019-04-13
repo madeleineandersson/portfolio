@@ -27,7 +27,7 @@ const swTravel = {
     img: "img/sprouts-logo.png",
     altText: "Sprouts logo",
     buttonText: "View video",
-    link: "#",
+    link: "https://player.vimeo.com/video/330216469",
     gridItem: 3
   },
   normative = {
