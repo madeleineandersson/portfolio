@@ -148,14 +148,14 @@ p {
 
 .header {
   color: #000;
-  padding: 10px;
+  padding: 20px 0;
   p {
     margin: 0;
   }  
   img {
     display: block;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
   img,
   p {
@@ -267,6 +267,10 @@ Media queries
 }
 
 @media (min-width: 54em) {
+  .grid-container {
+    grid-template-rows: repeat(6, 600px) 230px;
+  }
+
   .grid-hover {
     width: inherit; 
 
@@ -279,22 +283,23 @@ Media queries
     text-align: left;
   }
 
-
-
   .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 42px 300px;
     p {
       width: 410px;
-      margin-right: 40px;
       margin-left: 6px;
     }  
+    .bio {
+      margin-left: 10%;
+      margin-right: 5%;
+    }
     img {
       height: 350px;
       width: auto;
-    }
+      margin: 0 10% 0 0;
+     }
   }
 
   .project-button {
@@ -333,10 +338,12 @@ Media queries
   }
   
   .header {
-    padding: 0 420px;
-    img {
-      margin: 0;
+    .bio {
+      margin-left: 25%;
     }
+    img {
+      margin-right: 25%;
+     }
   }
 
   .footer {
